@@ -1,3 +1,5 @@
+Collection of classes for server and client to connect via non blocking sockets.
+
 ## Server Usage
 ```php
   try {
