@@ -1,7 +1,9 @@
 <?php 
 /* 
 	2020 Adam Carpentieri, Web Ventures LLC
-	Class for non-blocking socket connections as used by server socket   
+	Class for non-blocking socket connections as used by server socket 
+	Needs to run in a loop in order to handle connections properly.
+	Recommended no blocking requests in the thread handling this loop or else the socket server can get into degraded state
 */
 class ServerSocketConn {
 	
